@@ -1,0 +1,167 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header1 {
+  position: sticky;
+  top: 0;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+
+}
+
+
+
+.headerDiv .Portfolio {
+  font-size: 1.5rem;
+  margin: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+
+}
+
+.headerDiv ul {
+  display: flex;
+
+}
+
+.headerDiv ul li {
+  list-style: none;
+}
+
+.headerDiv ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.headerDiv ul li a:hover {
+  background-color: #172554;
+}
+
+.headerDiv .menu {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 32px;
+
+}
+
+.headerDiv .menu span {
+  height: 7px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+@media (max-width: 480px) {
+  .headerDiv .menu {
+    display: flex;
+  }
+
+  .headerDiv {
+    flex-direction: column;
+    align-items: start;
+
+  }
+
+  .headerDiv ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  .headerDiv ul li {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .headerDiv ul li a {
+    margin: 2px 6px;
+  }
+
+  /* .headerDiv ul.open {
+    display: flex;
+
+  } */
+}
+
+/* Projects */
+.title {
+  font-weight: bold;
+  background-color: turquoise;
+}
+
+.ProjectsH {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.about {
+  font-size: xx-large;
+  font-weight: bold;
+  color: turquoise;
+}
+
+.texth1 {
+  font-size: xx-large;
+  font-weight: bold;
+  color: turquoise;
+}
