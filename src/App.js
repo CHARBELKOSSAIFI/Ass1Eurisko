@@ -23,27 +23,29 @@ function App() {
   );
 }
 
-//an undefineddd errorrr  i dont know whyy, but im defined it 
+// an undefineddd errorrr  i dont know whyy, but im defined it 
+//scope
 
-// export const NavBar = () =>{
-//   const [menuOpen, setMenuOpen] = useState(false)
-// }
+
+export const NavBar = () =>{
+}
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <header className="header1">
       <div className="headerDiv">
         <a href="/" className="Portfolio">My Portfolio</a>   
         <nav className="nav">
-          <div className="menu" >
-          {/* onClick={() =>{
-            setMenuOpen(!menuOpen);
-          }} */}
+          <div className="menu" 
+          onClick={() =>{
+             setMenuOpen(!menuOpen);
+           }}
+           >
             <span></span>
             <span></span>
             <span></span>
             </div> 
-          <ul >
-           {/* className={menuOpen ? "open" : ""}  */}
+          <ul className={menuOpen ? "open" : ""} >
 
             <li><a href="/home" className="nav-link">Home</a></li>
             <li><a href="/about" className="nav-link">About Me</a></li>
